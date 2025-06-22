@@ -1,65 +1,27 @@
 # Data-analytics-Project-update
-Project update
 # Airbnb Dynamic Pricing Recommendation Engine
 
-This project aims to build a simple and effective **dynamic pricing recommendation system** for Airbnb listings based on location, seasonality, reviews, and listing characteristics.
+This project analyzes Airbnb listing data to build a dynamic pricing recommendation engine. It uses Python for data cleaning and modeling, and Power BI for interactive dashboard visualization.
 
-## 🔍 Objective
+## Tools Used
+- Python (Pandas, Scikit-learn)
+- Excel (initial inspection)
+- Power BI (dashboard & insights)
 
-To analyze historical Airbnb data and provide **optimal price suggestions** using a machine learning model.
+## Outputs
+- Cleaned dataset: `airbnb_cleaned.csv`
+- Python script: `airbnb_pricing_model.py`
+- Power BI visuals: pricing trends, filters, and recommendations
 
----
+## Key Features
+- Linear Regression model to predict optimal price
+- Power BI dashboard with filters by location and room type
+- Data-driven insights for hosts to adjust pricing strategy
 
-## 📁 Files
 
-- `listings.csv` – Raw Airbnb dataset
-- `airbnb_dynamic_pricing_code.py` – Python script for data cleaning, model building, and price suggestion
-- `airbnb_cleaned.csv` – Cleaned dataset ready for visualization in Tableau
 
----
 
-## 🛠️ Tools Used
 
-- **Python**
-  - Pandas, NumPy
-  - Scikit-learn (LinearRegression)
-  - Seaborn, Matplotlib
-- **Excel**
-  - For initial data inspection
-- **Jupyter Notebook**
-  - For step-by-step implementation and testing
+  
 
----
-
-## 🧪 Steps Performed
-
-1. **Data Cleaning**  
-   - Removed missing prices
-   - Handled nulls in reviews
-   - Converted categorical columns into dummies
-
-2. **Feature Selection**
-   - Kept relevant columns like `room_type`, `reviews`, `availability`, etc.
-
-3. **Model Training**
-   - Used Linear Regression to predict price
-   - Evaluated using Mean Squared Error
-
-4. **Price Prediction Function**
-   - Custom function to suggest price based on inputs
-
----
-
-## 📊 Next Steps (Not in this repo yet)
-
-- Build an interactive Tableau dashboard using `airbnb_cleaned.csv`
-- Add filters and price sliders for user exploration
-
----
-
-## 📌 Example Output
-
-```python
-suggest_price(50, 1.5, 180, 'Brooklyn', 'Entire home/apt')
-# Output: Suggested Price: $XYZ
 
